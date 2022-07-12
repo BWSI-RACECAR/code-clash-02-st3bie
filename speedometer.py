@@ -35,8 +35,9 @@ class Solution:
 
         for i in range((len(ary)) - 2):
             for j in range((len(ary) - i) - 1):
-                if (ary[i] + ary[i+j] == target):
+                if (ary[i] + ary[i+j+1] == target):
                     return [i, i+j]
+                    
 
         
         return False
