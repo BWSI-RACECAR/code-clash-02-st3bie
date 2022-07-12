@@ -33,8 +33,8 @@ class Solution:
         # type target: int
         # return type: list or bool
 
-        for i in range((len(ary))-1):
-            for j in range((len(ary) - j) - 1):
+        for i in range((len(ary)) - 2):
+            for j in range((len(ary) - i) - 1):
                 if (ary[i] + ary[i+j] == target):
                     return [i, i+j]
 
